@@ -1,0 +1,66 @@
+.heroSection {
+    color: #fff;
+    background-image: url(/images/herobg.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 90px 0 45px;
+    @include media(tablet-portrait-up){
+        min-height: 900px;
+        padding: 105px 0 0;    }
+    &::before{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: "";
+        background: rgba(0, 0, 0, 0.2);
+        z-index: 0;
+    }
+    .banner-content {
+        z-index: 1;
+    }
+    .Hero_content {
+        h1 {
+            font-size: 1.625rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        .welcome-text {
+            font-size: 18px;
+            p {
+                background: $theme-secondary;
+                border: 3px solid white;
+                padding: 4px 20px;
+                display: inline-block;
+                transform: skew(-21deg);
+                span {
+                    transform: skew(21deg);
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .qfa-logo {
+        position: relative;
+        display: inline-block;
+        a {
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            @include flex-center;    
+        }
+        .ball {
+            position: absolute;
+            animation: animName 2s linear infinite;
+        }
+    }
+}

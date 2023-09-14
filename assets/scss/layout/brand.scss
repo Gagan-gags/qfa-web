@@ -1,0 +1,51 @@
+.slider {
+    height: 150px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-bottom: -120px;
+    z-index: 10;
+    .slide-track {
+        animation: scroll 40s linear infinite;
+        display: flex;
+        width: calc(250px * 14);
+        .slide {
+            height: 150px;
+            width: 250px;
+            background: transparent;
+        }
+    }
+   
+}
+
+.slider .slide:nth-child(2n+1) {
+    margin-top: 20px;
+}
+
+.brand-section{
+    padding-top: 100px;
+    .qfa-logo-circle {
+        top: -10%;
+    }
+}
+/* brand section */
+@-webkit-keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}

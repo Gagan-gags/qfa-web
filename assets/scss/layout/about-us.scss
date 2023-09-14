@@ -1,0 +1,62 @@
+.qfa_about{
+    .qfa_img {
+        position: relative;
+    }
+    
+    .right-img {
+        position: relative;
+    }
+    .dot-pattern {
+        background-image: radial-gradient(circle, $theme-secondary 2px, transparent 2px);
+        background-size: 20px 20px;
+        background-position: -231px -2px;
+        background-size: 20px 20px;
+        width: 350px;
+        height: 180px;
+        margin-left: -100px;
+    }    
+}
+
+.qfa-logo-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 126px;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+
+.qfa-logo-circle .pos-relative img {
+    /* animation: animName 2s linear infinite; */
+    position: absolute;
+    left: 0;
+}
+
+.qfa-logo-circle .pos-relative .animate-img {
+    animation: animCircle 2s linear infinite;
+    transition: all 0.5s ease-in;
+    animation-duration: 5.0s;
+}
+
+@keyframes animCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(45deg);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}

@@ -1,0 +1,16 @@
+// pages and other global scss files import here
+@import 'variables';
+@import 'mixins/mixins';
+@import 'helpers/global';
+// home page layout section
+@import 'layout/header';
+@import 'layout/banner';
+@import 'layout/about-us';
+@import 'layout/news';
+@import 'layout/ranking';
+@import 'layout/brand';
+@import 'layout/media-gallery';
+@import 'layout/footer';
+
+
+

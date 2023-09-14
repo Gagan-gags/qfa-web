@@ -1,0 +1,38 @@
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+
+    &.header-bg {
+        background: $theme-secondary;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 50%;
+            background: -webkit-linear-gradient(125deg, $theme-secondary 48%, $theme-primary 48%);
+            background: -webkit-linear-gradient(right, $theme-secondary 48%, $theme-primary 48%);
+            background: linear-gradient(125deg, $theme-secondary 48%, $theme-primary 48%);
+            z-index: 0;
+        }
+
+        >div {
+            z-index: 2;
+        }
+    }
+
+  
+}
+.nav-custom {
+    .navbar-nav {
+        a{
+            padding: 10px 20px !important;
+        }
+    }
+}
